@@ -1,0 +1,63 @@
+{
+  "name": "avr-asm-formatter",
+  "displayName": "AVR ASM Formatter (personal)",
+  "description": "Column-aligns AVR assembly (label / mnemonic / operands / comment) without ever rewriting the inside of a token, so X+/-Y/Z+q addressing survives formatting intact.",
+  "version": "0.1.0",
+  "publisher": "joeosorio-local",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Formatters"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "avrAsmFormatter.formatDocument",
+        "title": "AVR ASM: Format Document"
+      }
+    ],
+    "configuration": {
+      "title": "AVR ASM Formatter",
+      "properties": {
+        "avrAsmFormatter.filePatterns": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": ["**/*.asm", "**/*.inc", "**/*.s", "**/*.S"],
+          "description": "Glob patterns of files this formatter applies to. Works regardless of which extension owns syntax highlighting for these files."
+        },
+        "avrAsmFormatter.mnemonicColumn": {
+          "type": "number",
+          "default": 4,
+          "description": "Column where the mnemonic/directive starts (labels live at column 0)."
+        },
+        "avrAsmFormatter.operandColumn": {
+          "type": "number",
+          "default": 12,
+          "description": "Column where operands start."
+        },
+        "avrAsmFormatter.commentColumn": {
+          "type": "number",
+          "default": 40,
+          "description": "Column where end-of-line comments (';') start."
+        },
+        "avrAsmFormatter.commentMinSpacing": {
+          "type": "number",
+          "default": 2,
+          "description": "Minimum spaces before a comment when the code already runs past commentColumn."
+        },
+        "avrAsmFormatter.alignCommentOnlyLines": {
+          "type": "boolean",
+          "default": true,
+          "description": "Re-indent whole-line comments to the mnemonic column instead of leaving their original indentation."
+        },
+        "avrAsmFormatter.mnemonicCase": {
+          "type": "string",
+          "enum": ["preserve", "upper", "lower"],
+          "default": "preserve",
+          "description": "Force the case of the mnemonic/directive token. Operands are never touched."
+        }
+      }
+    }
+  }
+}

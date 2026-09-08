@@ -66,3 +66,14 @@ dkms.conf
 # --- Instaladores y archivos pesados que no deben ir a Git ---
 0_Recursos/Apps/
 *.msi
+
+# --- Descargas a medias / archivos de bloqueo de Office ---
+*.crdownload
+*.part
+~$*
+
+# --- Artefactos de toolchain AVR (por si usan avr-gcc/avrdude en laboratorio) ---
+*.eep
+*.map
+*.lst
+*.d
