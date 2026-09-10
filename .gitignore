@@ -21,6 +21,7 @@
 
 # --- Carpetas de salida / compilación ---
 # Presentacion/
+Claude outputs/
 output/
 */output/
 bin/
