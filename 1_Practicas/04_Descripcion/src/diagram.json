@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "author": "Joshua Osorio O.",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": 0.6, "left": -3.6, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": -76.2,
+      "left": 600,
+      "attrs": { "color": "#d040d0" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btnInc",
+      "top": 160,
+      "left": 450,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btnDec",
+      "top": 190,
+      "left": 450,
+      "attrs": { "color": "red", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "sevseg1:A", "mega:49", "green", [] ],
+    [ "sevseg1:B", "mega:48", "gold", [] ],
+    [ "sevseg1:C", "mega:47", "orange", [] ],
+    [ "sevseg1:D", "mega:46", "blue", [] ],
+    [ "sevseg1:E", "mega:45", "violet", [] ],
+    [ "sevseg1:F", "mega:44", "gray", [] ],
+    [ "sevseg1:G", "mega:43", "cyan", [] ],
+    [ "sevseg1:DP", "mega:42", "magenta", [] ],
+    [ "sevseg1:COM.2", "mega:5V.2", "red", [] ],
+    [ "btnInc:1.l", "mega:A8", "green", [] ],
+    [ "btnDec:1.l", "mega:A9", "red", [] ],
+    [ "btnInc:2.r", "btnDec:2.r", "black", [] ],
+    [ "btnDec:2.r", "mega:GND.5", "black", [] ]
+  ],
+  "dependencies": {}
+}
