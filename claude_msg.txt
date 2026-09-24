@@ -1,0 +1,4 @@
+Actualizar archivos del curso Microcontroladores
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01D7iE6ZFy1ZYw2QFtrEzFS1
