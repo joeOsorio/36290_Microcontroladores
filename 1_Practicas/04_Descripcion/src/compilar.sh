@@ -4,8 +4,8 @@
 # Requiere que avr-gcc / avr-objcopy / avr-size esten en el PATH
 #
 # Ahora compila DOS archivos fuente y los enlaza juntos:
-#   - main.c        (logica en C: InitPorts, Display7Seg, check_Btn, main)
-#   - MyRutines.asm (rutina delay() en ensamblador puro)
+#   - main.c        
+#   - MyRutines.asm 
 
 MCU="atmega2560"
 F_CPU="16000000UL"
@@ -38,4 +38,8 @@ avr-size --mcu=${MCU} -C "${NOMBRE}.elf"
 echo "Listo: ${NOMBRE}.hex generado correctamente."
 
 # Para flashear a la Elegoo Mega 2560 con avrdude (descomenta y ajusta el puerto COM):
-# avrdude -c wiring -p m2560 -P COM3 -b 115200 -D -U flash:w:${NOMBRE}.hex:i
+# Se usa "-c arduino" en vez de "-c wiring": el avrdude.conf de este WinAVR (2010)
+# es anterior a que avrdude agregara el programador "wiring", pero "arduino" habla
+# el mismo protocolo STK500v1 que usa el bootloader de fabrica de la Mega2560/Elegoo
+# a 115200 baudios, asi que funciona igual para flashear.
+avrdude -c arduino -p m2560 -P COM3 -b 115200 -D -U flash:w:${NOMBRE}.hex:i
