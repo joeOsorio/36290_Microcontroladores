@@ -39,6 +39,7 @@ Module.symvers
 *.idb
 *.dwo
 
+
 # --- Archivos intermedios / temporales ---
 *.tmp
 *.temp
