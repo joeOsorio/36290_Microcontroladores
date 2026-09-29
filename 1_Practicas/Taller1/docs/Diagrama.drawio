@@ -1,0 +1,106 @@
+<mxfile host="65bd71144e">
+    <diagram id="SBRcoY9NopOOwvDolfp3" name="Página-1">
+        <mxGraphModel dx="1553" dy="906" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="mcu" value="Microcontrolador (Arduino Mega 2560)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1f3a5f;strokeColor=#0f2038;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="260" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="fuente" value="Fuente 5V + batería de respaldo (9V)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c98a2e;strokeColor=#8a5f1e;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="80" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="gas" value="Sensor de gas MQ-2 (GLP / humo)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4f8f5b;strokeColor=#2f5a37;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="140" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="flama" value="Sensor de flama (infrarrojo)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4f8f5b;strokeColor=#2f5a37;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="230" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="dht" value="Sensor DHT22 (temp. / hum.)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4f8f5b;strokeColor=#2f5a37;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="320" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="boton" value="Botón silenciar / reset (interrupción)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4f8f5b;strokeColor=#2f5a37;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="410" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="valvula" value="Electroválvula de gas (corte automático)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b23b3b;strokeColor=#7a2626;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="140" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="vent" value="Ventilador de extracción de emergencia" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3b6ea5;strokeColor=#274a72;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="230" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="sirena" value="Sirena / buzzer de alarma" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3b6ea5;strokeColor=#274a72;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="320" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="led" value="LED estroboscópico RGB de alerta" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3b6ea5;strokeColor=#274a72;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="410" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="lcd" value="LCD 16x2 (I2C)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3b6ea5;strokeColor=#274a72;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="410" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="rtc" value="RTC DS3231 (I2C) registro de eventos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3b6ea5;strokeColor=#274a72;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="500" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="bt" value="Módulo Bluetooth HC-05 (UART)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7a4fa0;strokeColor=#4f3269;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="500" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="tel" value="Smartphone (app de alertas)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9b9b9b;strokeColor=#5c5c5c;fontColor=#ffffff;fontStyle=1;fontSize=12;arcSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="600" width="200" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=none;strokeColor=#333333;strokeWidth=2;" parent="1" source="fuente" target="mcu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=none;strokeColor=#333333;strokeWidth=2;" parent="1" source="gas" target="mcu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=none;strokeColor=#333333;strokeWidth=2;" parent="1" source="flama" target="mcu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=none;strokeColor=#333333;strokeWidth=2;" parent="1" source="dht" target="mcu" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=none;strokeColor=#333333;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#00FF00;" parent="1" source="boton" target="mcu" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="745.0588235294119" as="sourcePoint"/>
+                        <mxPoint x="640.0588235294117" y="660" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="390" y="445"/>
+                            <mxPoint x="390" y="380"/>
+                            <mxPoint x="500" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=none;strokeColor=#333333;strokeWidth=2;" parent="1" source="mcu" target="valvula" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=none;strokeColor=#333333;strokeWidth=2;" parent="1" source="mcu" target="vent" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=none;strokeColor=#333333;strokeWidth=2;" parent="1" source="mcu" target="sirena" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=none;strokeColor=#333333;strokeWidth=2;" parent="1" source="mcu" target="led" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=none;strokeColor=#333333;strokeWidth=2;" parent="1" source="mcu" target="lcd" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=classic;startFill=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="lcd" target="rtc" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=classic;startFill=1;strokeColor=#333333;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="bt" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="520" y="310" as="sourcePoint"/>
+                        <mxPoint x="360" y="500" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="360" y="310"/>
+                            <mxPoint x="360" y="530"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;startArrow=classic;startFill=1;strokeColor=#333333;strokeWidth=2;" parent="1" source="bt" target="tel" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
