@@ -43,4 +43,4 @@ echo "Listo: ${NOMBRE}.hex generado correctamente."
 # es anterior a que avrdude agregara el programador "wiring", pero "arduino" habla
 # el mismo protocolo STK500v1 que usa el bootloader de fabrica de la Mega2560/Elegoo
 # a 115200 baudios, asi que funciona igual para flashear.
-avrdude -c arduino -p m2560 -P COM6 -b 115200 -D -U flash:w:${NOMBRE}.hex:i
+#avrdude -c arduino -p m2560 -P COM6 -b 115200 -D -U flash:w:${NOMBRE}.hex:i

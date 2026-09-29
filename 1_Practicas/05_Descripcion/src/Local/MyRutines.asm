@@ -1,7 +1,7 @@
 /*
  * MyRutines.asm - Practica 5
  * delay(uint16_t mseg): retardo por software calibrado a F_CPU = 16 MHz
- * (misma rutina de la Practica 4). mseg llega en r25:r24 (ABI de avr-gcc).
+ * mseg llega en r25:r24.
  */
 #include <avr/io.h>
 
